@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cassie.sensorapp.sensorapp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/sensor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="#4c4c4d"
+            android:textColor="#ffffff"
+            android:text="Sensors"
+            android:onClick="startActivity"/>
+        <Button
+            android:id="@+id/network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="#4c4c4d"
+            android:textColor="#ffffff"
+            android:text="Network Stats"
+            android:onClick="startActivity"/>
+        <Button
+            android:id = "@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="#4c4c4d"
+            android:textColor="#ffffff"
+            android:text="Phone Info"
+            android:onClick="startActivity"/>
+        <Button
+            android:id = "@+id/browser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="#4c4c4d"
+            android:textColor="#ffffff"
+            android:text="NoPerms App"
+            android:onClick="startActivity"/>
+    </LinearLayout>
+
+</RelativeLayout>
